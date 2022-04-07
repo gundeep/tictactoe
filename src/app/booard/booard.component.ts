@@ -10,7 +10,6 @@ export class BooardComponent implements OnInit {
   XIsNext: boolean;
   winner: string;
 
-
   constructor() { 
     this.squares = Array(9).fill(null);
     this.winner = "none";
@@ -22,6 +21,12 @@ export class BooardComponent implements OnInit {
     this.winner = "none";
     this.XIsNext = true;
   }
+
+  get player()
+  {
+    return this.XIsNext ? 'X' : '0'
+  }
+
   ngOnInit(): void {
     this.newGame();
   }
