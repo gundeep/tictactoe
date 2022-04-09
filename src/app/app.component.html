@@ -1,3 +1,18 @@
-<button mat-button>Hello World</button> 
-<app-booard></app-booard>
-<router-outlet></router-outlet>
+<nb-layout>
+
+  <nb-layout-header fixed>
+  <!-- Insert header here -->
+  </nb-layout-header>
+
+  <nb-layout-column>
+    <button mat-button>Hello World</button> 
+    <app-booard></app-booard>
+    <router-outlet></router-outlet>
+    
+  </nb-layout-column>
+
+  <nb-layout-footer fixed>
+  <!-- Insert footer here -->
+  </nb-layout-footer>
+
+</nb-layout>
